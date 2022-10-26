@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    background-color: #111111;
+}
+
+header > div > div, main > div > div, footer > div > div {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ====== TIPOGRAFIA ====== */
+
+h1 {
+    margin: 2rem 0;
+
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.25;
+
+    span {
+        font-size: 6rem;
+        font-weight: bold;
+        font-style: italic;
+
+        color: #ff0000;
+        text-shadow: 0px 0px 15px #ff000050;
+    }
+}
+
+p {
+    margin: 2rem 0;
+
+    font-size: 2.4rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.25;
+
+    span {
+        font-weight: bold;
+
+        color: #111111;
+        background-color: #ff0000;
+    }
+}
+
+h2 {
+    margin: 2rem 0;
+
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1;
+
+    span {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+}
+
+/* ====== BOTÕES ====== */
+
+a.btn {
+    max-width: 75%;
+    display: block;
+
+    margin: 3rem auto 2rem auto;
+    padding: 1rem;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #00B800, #005200);
+    border-radius: 40px;
+    box-shadow: 0px 0px 15px 0px #00b800;
+}
+
+/* ====== DIVS ====== */
+
+div#first {
+    background-image: url(media/bacgrkound-1-pc.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ====== HACKS ====== */
+
+.mt4n {
+    margin-top: -4rem;
+}
+
+/* ====== FOOTER ====== */
+
+footer {
+    
+    p {
+        font-size: 1.4rem;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        font-size: 1.4rem;
+        text-align: center;
+        text-decoration: none;
+
+        color: #FFFFFF;
+    }
+
+    img {
+        margin-top: -4rem;
+        margin-bottom: -1rem;
+    }
+}
+
+/* ====== RESPONSIVO ====== */
+
+@media screen and (max-width: 640px) {
+    
+/* ====== TIPOGRAFIA ====== */
+
+h1 {
+    line-height: 1;
+    
+    span {
+        display: inline-block;
+        margin: 1.5rem 0;
+    }
+}
+
+/* ====== DIVS ====== */
+
+div#first {
+    background-position: left;
+}
+
+}
